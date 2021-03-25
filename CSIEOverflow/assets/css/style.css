@@ -491,7 +491,11 @@ h1, h2, h3, h4, h5, h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 40x 0;
+  overflow: hidden;
+}
+section-2 {
+  padding: 5px 0;
   overflow: hidden;
 }
 
