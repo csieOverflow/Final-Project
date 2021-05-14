@@ -10,7 +10,7 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  color: #444444;
+  color: #3d3d3d;
 }
 
 a {
@@ -73,19 +73,17 @@ h1, h2, h3, h4, h5, h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  height: 70px;
-  transition: all 0.5s;
-  z-index: 997;
-  transition: all 0.5s;
-  background: rgba(42, 44, 57, 0.9);
+  height: 63px;
+  border-top: 3px solid #f48024;
+  padding: 3px 3px 0 3px;
+  box-shadow: 5px 2px rgba(0,0,0,0.1);
+  z-index: 1000;
+  background-color: #3d3d3d;
 }
 
-#header.header-transparent {
-  background: transparent;
-}
 
 #header.header-scrolled {
-  background: rgba(42, 44, 57, 0.9);
+  background: #3d3d3d;
 }
 
 #header .logo h1 {
@@ -116,10 +114,11 @@ h1, h2, h3, h4, h5, h6 {
 */
 .navbar {
   padding: 0;
+  margin: 100px;
 }
 
 .navbar ul {
-  margin: 0;
+  margin:0;
   padding: 0;
   display: flex;
   list-style: none;
@@ -128,6 +127,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar li {
   position: relative;
+  z-index: 2;
 }
 
 .navbar a {
@@ -149,8 +149,11 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 5px;
 }
 
-.navbar a:hover, .navbar .active, .navbar li:hover > a {
-  background: #ef6603;
+.navbar a:hover,.navbar .active  {
+  background: #f48024;
+}
+.navbar li:hover > a{
+  background: #404345;
 }
 
 .navbar .dropdown ul {
@@ -188,6 +191,18 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
+.navbar input[type=text] {
+  width: 50%;
+  margin: 0;
+  padding: .6em .7em;
+  border: 1px solid #5e5e5e;
+  border-radius: 3px;
+  background-color: #312f2f;
+  color: white;
+  font-size: 13px;
+  font-family: inherit;
+  line-height: 1.15384615;
+}
 .navbar .dropdown:hover > ul {
   opacity: 1;
   top: 100%;
@@ -206,6 +221,8 @@ h1, h2, h3, h4, h5, h6 {
   left: 100%;
   visibility: visible;
 }
+
+
 
 @media (max-width: 1366px) {
   .navbar .dropdown .dropdown ul {
@@ -323,8 +340,18 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   overflow: hidden;
   position: relative;
-  background: linear-gradient(0deg, #2a2c39 0%, #33364a 100%);
+  background: #3d3d3d;
   padding: 0px 0px 160px 0px;
+}
+
+.text-block {
+  position: absolute;
+  bottom: 35%;
+  background-color: transparent;
+  color: white;
+  width: 1347.9px;
+  text-align: center;
+  vertical-align: middle;
 }
 
 #hero .container {
