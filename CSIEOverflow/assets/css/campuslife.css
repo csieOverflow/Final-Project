@@ -677,7 +677,38 @@ body {
   background-color: #3d3d3d; 
   border-radius: 10px;
 }
+@media (max-width: 1366px) {
+  table, th,td{
+    zoom: 90%;
+  }
+}
 
+@media (max-width: 991px) {
+  table, th,td{
+    zoom: 85%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  
+  table, th,td{
+    zoom: 50%;
+  }
+}
+
+
+/*--------------------------------------------------------------
+# Service Learning 
+--------------------------------------------------------------*/
+
+#sl-img {
+  width: 550px;
+}
+
+@media screen and (max-width: 768px) {
+  #sl-img {
+    zoom: 75%;
+  }
+}
 /*--------------------------------------------------------------
 # Administration
 --------------------------------------------------------------*/
@@ -719,7 +750,9 @@ body {
 .img-magnifier-container {
   position: relative;
 }
-
+.myimage{
+  width: 1000px;
+}
 .img-magnifier-glass {
   position: absolute;
   border: 3px solid #000;
@@ -731,6 +764,146 @@ body {
   width: 200px;
   height: 200px;
 }
+
+@media only screen and (max-width: 1366px) {
+  .img-magnifier-container{
+    text-align: center;
+  }
+  #myimage{
+    width:1000px;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .img-magnifier-container{
+    text-align: center;
+  }
+  #myimage{
+    width:800px;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .img-magnifier-container{
+    text-align: center;
+  }
+  #myimage{
+    width:400px;
+    text-align: center;
+  }
+}
+
+
+/*--------------------------------------------------------------
+# Part time Job
+--------------------------------------------------------------*/
+
+.btn-workpermit {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 50px;
+  transition: 0.5s;
+  line-height: 1;
+  margin: 10px;
+  color: orangered;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+  border: 2px solid #ef6603;
+}
+
+.btn-workpermit:hover {
+  background: #ef6603;
+  color: #fff;
+  text-decoration: none;
+}
+.container-content{
+  margin-left: 225px;
+}
+.container-wp {
+  position: relative;
+  display: flex;
+  margin-left: 210px;
+  size: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  /* padding-right: 0; */
+  max-width: auto;
+  height: auto;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0px 10px 0px 10px;
+  color: orange;
+  background-color: black;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 1366px) {
+  .container-wp{
+    margin-left: 0px;
+    size: 90%;
+    text-align: center;
+    padding-top: 10px;
+  }
+  .centered h1{
+    font-size: 35px;
+  }
+  #ptj-img{
+    width: 100%;
+  }
+  .container-content{
+    margin-left: 0px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .container-wp{
+    margin-left: 0px;
+    size: 50%;
+    text-align: center;
+    padding-top: 10px;
+  }
+  .centered h1{
+    font-size: 22px;
+  }
+  #ptj-img{
+    width: 100%;
+  }
+  .container-content{
+    margin-left: 0px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .container-wp{
+    margin-left: 0px;
+    size: 50%;
+    text-align: center;
+    padding-top: 10px;
+  }
+  .centered h1{
+    font-size: 22px;
+  }
+  #ptj-img{
+    width: 100%;
+  }
+  .container-content{
+    margin-left: 0px;
+  }
+  
+}
+
 
 /*--------------------------------------------------------------
 # Autonomous Hours
