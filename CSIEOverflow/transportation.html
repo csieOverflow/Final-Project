@@ -29,14 +29,13 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
   <link href="assets/css/campuslife.css" rel="stylesheet">
 </head>
 
 <body class="sb-nav-fixed">
-  <header id="header" class="fixed-top d-flex align-items-center header-transparent " >
+  <header id="header" class="fixed-top d-flex align-items-center header-transparent ">
     <div class="container d-flex align-items-center justify-content-between">
       <a href="index.html">
         <img src="assets/img/logo.png" href="index.html" style="width: 200pt;">
@@ -57,7 +56,7 @@
     </div>
   </header><!-- End Header -->
 
-  
+
     <div id="layoutSidenav">
       <div id="layoutSidenav_nav">
           <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
@@ -72,11 +71,11 @@
                         <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                         Restaurants
                       </a>
-                      <a class="nav-link active" href="campus_map.html">
+                      <a class="nav-link" href="campus_map.html">
                         <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                         Campus Map
                       </a>
-                      <a class="nav-link" href="transportation.html">
+                      <a class="nav-link active" href="transportation.html">
                         <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                         Transportation
                       </a>
@@ -122,79 +121,85 @@
           </nav>
       </div>
 
-      <div id="layoutSidenav_content">
+      <div id="layoutSidenav_content" style="background-color: #2d2d2d;">
         <main>
-          <div class="container-fluid" style="background: #2d2d2d;">
-            <h1 class="mt-4">Campus Map</h1>
-            <h3 style="text-indent: 2rem;">Going around the campus might be difficult for first timers as it is very wide and might be confusing for some people.
-            Here is the <a href="assets/img/map.pdf"><u>Campus Map</u></a> which will help you find your way if you're new here!</h3>
-            <br>
-            <div class="img-magnifier-container">
-              <img id="myimage" src="assets/img/map.png" style="width: 1000px;" alt="NDHU Map">
-            </div>
+          <div class="container-fluid">
+            <h1 class="mt-4">Transportation</h1>
+            <div class="transport-content" >
+              <h2>Bus</h2>
+              <h3 style="text-indent: 2rem;">
+                Our university is located 30 minutes away from Hualien city, thus it is very inconvenient for us to 
+                go there without a scooter or a car.Taking the bus is one of the things you may consider. 
+                In NDHU, we have shuttle bus which goes inside the campus which is very convenient for 
+                students who are going to the city or somewhere between our campus and the city.
+                There are two buses that can take you to Hualien city, which two are 301 bus and 1121 bus.<br>
+              </h3>
+              <h3 style="text-indent: 2rem;">
+                You can always monitor the bus schedule and which station it is stopping at in current time from the iBus app.<br>
+                Just go to play store or app store on your mobile phone and search for "iBus_公路客運", 
+                after you have downloaded the app, you can input any bus route# you would like to monitor and there you go!
+              </h3>
             
-            <br>
+                <table style="width:100%; background-color: #2d2d2d; padding: 10px;">
+                  <tr>
+                    <th style="text-align: center; border: 5px solid #4d4c4c; font-size: 23px;color: white; border-radius: 50px;">Bus 301</th>
+                    <th style="text-align: center; border: 5px solid #4d4c4c; font-size: 23px;color: white; border-radius: 50px;">Bus 1121</th> 
+                  </tr>
+                  <tr>
+                    <td style="text-align: center; border: 5px solid #4d4c4c; border-radius: 50px;">
+                      <img src="assets/img/301.jpg" style="padding: 10px; width: 425px; ">
+                    </td>
+                    <td style="text-align: center; border: 5px solid #4d4c4c; border-radius: 50px;">
+                      <br><img src="assets/img/1121.jpg" style="width: 425px">
+                      <img src="assets/img/1121-1.jpg" style="width: 425px;">
+                      <br>
+                      <br>
+                    </td>
+                  </tr>
+                
+                </table>
+            </div>
+
+            <div class="transport-content">
+              <h2>Train</h2>
+              <h3 style="text-indent: 2rem;">
+                Another option of public transportation is the train. If you are considering to take the train to go to the city(or somewhere else),
+                you can go to <a href="https://tip.railway.gov.tw/tra-tip-web/tip?lang=EN_US">this website</a> and check the train timetable.<br>
+                All you need to do is fill in your departure station, arrival station also the time you wish to leave, and there you go!<br><br>
+              </h3>
+            </div>
+
+            <div class="transport-content">
+              <h2>Taxi</h2>
+              <h3 style="text-indent: 2rem;">
+                The last option you may consider is taking the taxi. There is one taxi company which our school is collaborating with, named 全家（Quánjiā）.
+                The only thing you need to do is to call 0800255255 and tell the taxi driver the location you want to be picked up at.
+                For example :<br>
+                <b>你好我要叫車, 我在(Nǐ hǎo wǒ yào jiào chē, wǒ zài) = Hello I would like to call a car, I'm at)...</b>><br><br>
+                1.東華大學圖書館(Dōnghuá dàxué túshū guǎn) = NDHU library<br>
+                2.志學火車站(Zhì xué huǒchē zhàn) = Zhixue train station<br>
+                etc.<br>
+              </h3>
+              <h3 style="text-indent: 2rem;">This taxi would usually cost around 250NT$ to 280NT$ if you are a student, 
+                and are coming or going to Hualien city from the campus area<br><br>
+              </h3>
+            </div>
+
+            <div class="transport-content">
+              <h2>Bicycle</h2>
+              <h3 style="text-indent: 2rem;">
+                Going around in campus might be a bit too exhausting if you don't owe a bicycle.(unless you own an electric scooter or anything better).
+                Because of this, you should consider buying a bicycle as it will make your campus life easier and a little more convenient.<br>
+                There is usually a bike auction in the beginning of each semester in which you can get a second-hand bike for less than 400NT$.<br>
+                You can also get a new one from the bicycle shop at NDHU back gate(the one by the intersection), prices vary around 1000NT$~5000NT$ depending on brands.<br><br>
+              </h3>
+            </div>
           </div>
     </main>
   </div>
 </div>
   <!-- </div> -->
-  <script>
-    function magnify(imgID, zoom) {
-      var img, glass, w, h, bw;
-      img = document.getElementById(imgID);
-      /*create magnifier glass:*/
-      glass = document.createElement("DIV");
-      glass.setAttribute("class", "img-magnifier-glass");
-      /*insert magnifier glass:*/
-      img.parentElement.insertBefore(glass, img);
-      /*set background properties for the magnifier glass:*/
-      glass.style.backgroundImage = "url('" + img.src + "')";
-      glass.style.backgroundRepeat = "no-repeat";
-      glass.style.backgroundSize = (img.width * zoom) + "px " + (img.height * zoom) + "px";
-      bw = 3;
-      w = glass.offsetWidth / 2;
-      h = glass.offsetHeight / 2;
-      /*execute a function when someone moves the magnifier glass over the image:*/
-      glass.addEventListener("mousemove", moveMagnifier);
-      img.addEventListener("mousemove", moveMagnifier);
-      /*and also for touch screens:*/
-      glass.addEventListener("touchmove", moveMagnifier);
-      img.addEventListener("touchmove", moveMagnifier);
-      function moveMagnifier(e) {
-        var pos, x, y;
-        /*prevent any other actions that may occur when moving over the image*/
-        e.preventDefault();
-        /*get the cursor's x and y positions:*/
-        pos = getCursorPos(e);
-        x = pos.x;
-        y = pos.y;
-        /*prevent the magnifier glass from being positioned outside the image:*/
-        if (x > img.width - (w / zoom)) {x = img.width - (w / zoom);}
-        if (x < w / zoom) {x = w / zoom;}
-        if (y > img.height - (h / zoom)) {y = img.height - (h / zoom);}
-        if (y < h / zoom) {y = h / zoom;}
-        /*set the position of the magnifier glass:*/
-        glass.style.left = (x - w) + "px";
-        glass.style.top = (y - h) + "px";
-        /*display what the magnifier glass "sees":*/
-        glass.style.backgroundPosition = "-" + ((x * zoom) - w + bw) + "px -" + ((y * zoom) - h + bw) + "px";
-      }
-      function getCursorPos(e) {
-        var a, x = 0, y = 0;
-        e = e || window.event;
-        /*get the x and y positions of the image:*/
-        a = img.getBoundingClientRect();
-        /*calculate the cursor's x and y coordinates, relative to the image:*/
-        x = e.pageX - a.left;
-        y = e.pageY - a.top;
-        /*consider any page scrolling:*/
-        x = x - window.pageXOffset;
-        y = y - window.pageYOffset;
-        return {x : x, y : y};
-      }
-    }
-    </script>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
@@ -206,7 +211,6 @@
     <script src="assets/demo/datatables-demo.js"></script>
 
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-  
     <!-- Vendor JS Files -->
     <script src="assets/vendor/aos/aos.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -224,11 +228,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script>
-      /* Initiate Magnify Function
-      with the id of the image, and the strength of the magnifier glass:*/
-      magnify("myimage", 1.5);
-      </script>
+
 </body>
 
 </html>

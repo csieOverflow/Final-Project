@@ -29,14 +29,13 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
   <link href="assets/css/campuslife.css" rel="stylesheet">
 </head>
 
 <body class="sb-nav-fixed">
-  <header id="header" class="fixed-top d-flex align-items-center header-transparent " >
+  <header id="header" class="fixed-top d-flex align-items-center header-transparent ">
     <div class="container d-flex align-items-center justify-content-between">
       <a href="index.html">
         <img src="assets/img/logo.png" href="index.html" style="width: 200pt;">
@@ -56,7 +55,6 @@
 
     </div>
   </header><!-- End Header -->
-
   
     <div id="layoutSidenav">
       <div id="layoutSidenav_nav">
@@ -72,7 +70,7 @@
                         <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                         Restaurants
                       </a>
-                      <a class="nav-link active" href="campus_map.html">
+                      <a class="nav-link" href="campus_map.html">
                         <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                         Campus Map
                       </a>
@@ -102,7 +100,7 @@
                         <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                         Graduation Requirements
                       </a>
-                      <a class="nav-link" href="autonomous_hours.html">
+                      <a class="nav-link active" href="autonomous_hours.html">
                         <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                         Autonomous Hours
                       </a>
@@ -122,79 +120,59 @@
           </nav>
       </div>
 
-      <div id="layoutSidenav_content">
+      <div id="layoutSidenav_content" style="background-color: #2d2d2d;">
         <main>
-          <div class="container-fluid" style="background: #2d2d2d;">
-            <h1 class="mt-4">Campus Map</h1>
-            <h3 style="text-indent: 2rem;">Going around the campus might be difficult for first timers as it is very wide and might be confusing for some people.
-            Here is the <a href="assets/img/map.pdf"><u>Campus Map</u></a> which will help you find your way if you're new here!</h3>
-            <br>
-            <div class="img-magnifier-container">
-              <img id="myimage" src="assets/img/map.png" style="width: 1000px;" alt="NDHU Map">
+          <div class="container-fluid"><br>
+            <h1>Autonomous Hours</h1>
+            <h3 style="text-indent: 2rem;">
+              Every NDHU student has to finish 65hours of autonomous learning to be able to graduate. The total 
+              hours might be different depending on the year you are admitted. The total hours are divided 
+              into 3 categories, which are: Service Dedication, Multi-Progress and Professional Development.<br><br>
+            </h3>
+            <div class="au-content" >
+              <div class="autonomous-content" >
+                <h2>Service Dedication</h2>
+                <h3 style="text-indent: 2rem;">
+                  There are a lot of things that you can do to fill-out our Service Dedication hours. 
+                  You can either go to the department office and ask for some work to do (running errands), 
+                  or you can also be a volunteer at various school events.
+                </h3>
+              </div>
+
+              <div class="autonomous-content" >
+                <h2>Multi-Progress</h2>
+                <h3 style="text-indent: 2rem;">
+                  Multi-Progress hours are the easiest ones to get. You can attend the events which are held 
+                  in school such as workshops, move nights or even concerts.
+                </h3>
+              </div>
+
+              <div class="autonomous-content">
+                <h2>Professional Development</h2>
+                <h3 style="text-indent: 2rem;">
+                For Professional Development, there is not much you can attend. The events whose hours are counted in this section are only those which are held by your own department. For us(CSIE), the department will hold computer related seminars and workshops. You have to attend these in order to get your Professional Development hours filled.<br><br>
+                </h3>
+              </div>
             </div>
-            
-            <br>
+              <div class="au-outer">
+              <div class="tips-content" >
+                <h2 style="font-weight:bold;color:#3d3d3d;">TIPS :</h2> 
+                <h3 style="color:#3d3d3d;text-indent: 2rem; font-weight: bold;"> "thing you can do to get Service Dedication or Multi-Progress hours is to organize events with your 
+                  classmates and apply for hours from the <a href="https://sys.ndhu.edu.tw/SA/XSL_ApplyRWD/Login.aspx?lang=en">
+                    autonomous learning website</a>. Just take as many pictures as you can as a proof, apply for reasonable amount 
+                    of hours for the activity (max. 6hrs) and submit it together with your classmates. The school will decide 
+                    whether or not you can get the hours."
+                </h3>
+              </div><br><br>
+            </div>
+          
           </div>
-    </main>
-  </div>
+          </div>
+        </main>
+      </div>
 </div>
   <!-- </div> -->
-  <script>
-    function magnify(imgID, zoom) {
-      var img, glass, w, h, bw;
-      img = document.getElementById(imgID);
-      /*create magnifier glass:*/
-      glass = document.createElement("DIV");
-      glass.setAttribute("class", "img-magnifier-glass");
-      /*insert magnifier glass:*/
-      img.parentElement.insertBefore(glass, img);
-      /*set background properties for the magnifier glass:*/
-      glass.style.backgroundImage = "url('" + img.src + "')";
-      glass.style.backgroundRepeat = "no-repeat";
-      glass.style.backgroundSize = (img.width * zoom) + "px " + (img.height * zoom) + "px";
-      bw = 3;
-      w = glass.offsetWidth / 2;
-      h = glass.offsetHeight / 2;
-      /*execute a function when someone moves the magnifier glass over the image:*/
-      glass.addEventListener("mousemove", moveMagnifier);
-      img.addEventListener("mousemove", moveMagnifier);
-      /*and also for touch screens:*/
-      glass.addEventListener("touchmove", moveMagnifier);
-      img.addEventListener("touchmove", moveMagnifier);
-      function moveMagnifier(e) {
-        var pos, x, y;
-        /*prevent any other actions that may occur when moving over the image*/
-        e.preventDefault();
-        /*get the cursor's x and y positions:*/
-        pos = getCursorPos(e);
-        x = pos.x;
-        y = pos.y;
-        /*prevent the magnifier glass from being positioned outside the image:*/
-        if (x > img.width - (w / zoom)) {x = img.width - (w / zoom);}
-        if (x < w / zoom) {x = w / zoom;}
-        if (y > img.height - (h / zoom)) {y = img.height - (h / zoom);}
-        if (y < h / zoom) {y = h / zoom;}
-        /*set the position of the magnifier glass:*/
-        glass.style.left = (x - w) + "px";
-        glass.style.top = (y - h) + "px";
-        /*display what the magnifier glass "sees":*/
-        glass.style.backgroundPosition = "-" + ((x * zoom) - w + bw) + "px -" + ((y * zoom) - h + bw) + "px";
-      }
-      function getCursorPos(e) {
-        var a, x = 0, y = 0;
-        e = e || window.event;
-        /*get the x and y positions of the image:*/
-        a = img.getBoundingClientRect();
-        /*calculate the cursor's x and y coordinates, relative to the image:*/
-        x = e.pageX - a.left;
-        y = e.pageY - a.top;
-        /*consider any page scrolling:*/
-        x = x - window.pageXOffset;
-        y = y - window.pageYOffset;
-        return {x : x, y : y};
-      }
-    }
-    </script>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
@@ -204,9 +182,9 @@
     <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
     <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js" crossorigin="anonymous"></script>
     <script src="assets/demo/datatables-demo.js"></script>
-
+    
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-  
+
     <!-- Vendor JS Files -->
     <script src="assets/vendor/aos/aos.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -224,11 +202,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script>
-      /* Initiate Magnify Function
-      with the id of the image, and the strength of the magnifier glass:*/
-      magnify("myimage", 1.5);
-      </script>
+
 </body>
 
 </html>

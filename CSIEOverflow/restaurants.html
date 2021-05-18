@@ -34,9 +34,11 @@
 </head>
 
 <body class="sb-nav-fixed">
-    <header id="header" class="fixed-top d-flex align-items-center header-transparent " style="margin-left: -23px;">
+    <header id="header" class="fixed-top d-flex align-items-center header-transparent ">
       <div class="container d-flex align-items-center justify-content-between">
-      <img src="assets/img/logo.png" style="width:200pt;">
+        <a href="index.html">
+          <img src="assets/img/logo.png" href="index.html" style="width: 200pt;">
+        </a>
   
         <nav id="navbar" class="navbar">
           <ul>
@@ -45,10 +47,7 @@
             <li><a class="nav-link scrollto" href="#">Q&A</a></li>
             <li><a class="nav-link scrollto active" href="campus_life.html">Campus Life</a></li>
             <li><a class="nav-link scrollto" href="#contactUs">Contact Us</a></li>
-            <div class="search-bar" style="margin-left: 100px;">
-              <i class="fa fa-search" aria-hidden="true" style="padding:0.5rem;"></i>
-              <input type="text" placeholder="Search..">
-            </div>
+            
           </ul>
           <i class="bi bi-list mobile-nav-toggle"></i>
         </nav><!-- .navbar -->
@@ -109,10 +108,6 @@
                         <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                         Service Learning
                       </a>
-                      <a class="nav-link" href="undergraduate_project.html">
-                        <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
-                        Undergraduate Project
-                      </a>
                       <a class="nav-link" href="oia.html">
                         <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                         OIA(International Affairs)
@@ -125,125 +120,133 @@
           </nav>
       </div>
 
-      <div id="layoutSidenav_content">
+      <div id="layoutSidenav_content" style="background-color: #2d2d2d;">
         <main>
-          <div class="container-fluid">
-            <h2 class="mt-4">Where to Eat ?</h2>
-            <h3 style="font-size: 1rem;">Here are recommended breakfast and brunch restaurants in Zhixue street</h3>
+          <div class="container-fluid" style="background-color: #2d2d2d;">
+            <h1 class="mt-4"><b>Where to Eat ?</b></h1>
+            <h2 style="font-weight: 400;letter-spacing: 1px; font-size: 1.5rem;">Here are recommended breakfast and brunch restaurants in Zhixue street</h3>
+            <br>
               <!-- ****** Gallery Area Start ****** -->
-              <section class="sonar-projects-area" id="projects">
-                <div class="container-fluid">
-                    <div class="row sonar-portfolio">
-          
-                        <div class="col-12 col-sm-6 col-lg-3 single_gallery_item landscapes studio wow fadeInUpBig" data-wow-delay="300ms">
-                            <a href="https://m.facebook.com/2012Happyday/"><img src="assets/img/meimei.jpg" width="224px;" height="252px;"></a>
+              <section class="sonar-projects-area" id="projects" >
+                <div class="restaurant-content">
+                  <div class="container-fluid">
+                      <div class="row sonar-portfolio">
+            
+                          <div class="col-12 col-sm-6 col-lg-3 single_gallery_item landscapes studio wow fadeInUpBig" data-wow-delay="300ms">
+                              <a href="https://m.facebook.com/2012Happyday/"><img src="assets/img/meimei.jpg" width="224px;" height="252px;"></a>
+                              <div class="gallery-content" style="text-align:center;">
+                                  <h4><b>瑞麟美而美</b></h4>
+                                  <h5>Ruì lín měi ér měi</h5>
+                              </div>
+                          </div>
+            
+                          <div class="col-12 col-sm-6 col-lg-3 single_gallery_item portraits fashion wow fadeInUpBig" data-wow-delay="500ms">
+                              <a href="http://www.banten.com.tw/branches.php"><img src="assets/img/wjx.jpg" width="224px;" height="252px;"></a>
+                              <div class="gallery-content" style="text-align:center;">
+                                  <h4><b>志學萬佳鄉</b></h4>
+                                  <h5>Zhì xué wàn jiā xiāng</h5>
+                              </div>
+                          </div>
+            
+                          <div class="col-12 col-sm-6 col-lg-3 single_gallery_item landscapes studio wow fadeInUpBig" data-wow-delay="700ms">
+                            <a href="https://www.facebook.com/ndhu.mywarmday"><img src="assets/img/mwd.jpg" width="224px;" height="252px;"></a>
                             <div class="gallery-content">
-                                <h4>瑞麟美而美</h4>
-                                <p>Ruì lín měi ér měi</p>
-                            </div>
-                        </div>
-          
-                        <div class="col-12 col-sm-6 col-lg-3 single_gallery_item portraits fashion wow fadeInUpBig" data-wow-delay="500ms">
-                            <a href="http://www.banten.com.tw/branches.php"><img src="assets/img/wjx.jpg" width="224px;" height="252px;"></a>
-                            <div class="gallery-content">
-                                <h4>志學萬佳鄉</h4>
-                                <p>Zhì xué wàn jiā xiāng</p>
-                            </div>
-                        </div>
-          
-                        <div class="col-12 col-sm-6 col-lg-3 single_gallery_item landscapes studio wow fadeInUpBig" data-wow-delay="700ms">
-                            <a class="gallery-img" href="img/portfolio-img/3.jpg"><img src="img/portfolio-img/3.jpg" alt=""></a>
-                            <!-- Gallery Content -->
-                            <div class="gallery-content">
-                                <h4>Mountains in the mist</h4>
-                                <p>Landscapes</p>
-                            </div>
-                        </div>
-          
-                        <div class="col-12 col-sm-6 col-lg-3 single_gallery_item portraits studio wow fadeInUpBig" data-wow-delay="900ms">
-                            <a class="gallery-img" href="img/portfolio-img/4.jpg"><img src="img/portfolio-img/4.jpg" alt=""></a>
-                            <!-- Gallery Content -->
-                            <div class="gallery-content">
-                                <h4>A beautifull encounter</h4>
-                                <p>Portrait</p>
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-sm-6 col-lg-3 single_gallery_item landscapes fashion wow fadeInUpBig" data-wow-delay="300ms">
-                            <a class="gallery-img" href="img/portfolio-img/5.jpg"><img src="img/portfolio-img/5.jpg" alt=""></a>
-                            <!-- Gallery Content -->
-                            <div class="gallery-content">
-                                <h4>Mountains in the mist</h4>
-                                <p>Landscapes</p>
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-sm-6 col-lg-3 single_gallery_item portraits fashion wow fadeInUpBig" data-wow-delay="500ms">
-                            <a class="gallery-img" href="img/portfolio-img/6.jpg"><img src="img/portfolio-img/6.jpg" alt=""></a>
-                            <!-- Gallery Content -->
-                            <div class="gallery-content">
-                                <h4>A beautifull encounter</h4>
-                                <p>Portrait</p>
-                            </div>
-                        </div>
-          
-                        <div class="col-12 col-sm-6 col-lg-3 single_gallery_item landscapes fashion wow fadeInUpBig" data-wow-delay="700ms">
-                            <a class="gallery-img" href="img/portfolio-img/7.jpg"><img src="img/portfolio-img/7.jpg" alt=""></a>
-                            <!-- Gallery Content -->
-                            <div class="gallery-content">
-                                <h4>Mountains in the mist</h4>
-                                <p>Landscapes</p>
+                                <h4>麥味登</h4>
+                                <h5>Mài wèi dēng</h5>
                             </div>
                         </div>
           
                         <div class="col-12 col-sm-6 col-lg-3 single_gallery_item portraits studio wow fadeInUpBig" data-wow-delay="900ms">
-                            <a class="gallery-img" href="img/portfolio-img/8.jpg"><img src="img/portfolio-img/8.jpg" alt=""></a>
-                            <!-- Gallery Content -->
+                            <a href="https://www.facebook.com/MyShineNDHU"><img src="assets/img/mxhl.jpg" width="224px;" height="252px;"></a>
                             <div class="gallery-content">
-                                <h4>A beautifull encounter</h4>
-                                <p>Portrait</p>
-                            </div>
-                        </div>
-          
-                        <div class="col-12 col-sm-6 col-lg-3 single_gallery_item landscapes studio wow fadeInUpBig" data-wow-delay="300ms">
-                            <a class="gallery-img" href="img/portfolio-img/9.jpg"><img src="img/portfolio-img/9.jpg" alt=""></a>
-                            <!-- Gallery Content -->
-                            <div class="gallery-content">
-                                <h4>Mountains in the mist</h4>
-                                <p>Landscapes</p>
-                            </div>
-                        </div>
-          
-                        <div class="col-12 col-sm-6 col-lg-3 single_gallery_item portraits wow fadeInUpBig" data-wow-delay="500ms">
-                            <a class="gallery-img" href="img/portfolio-img/10.jpg"><img src="img/portfolio-img/10.jpg" alt=""></a>
-                            <!-- Gallery Content -->
-                            <div class="gallery-content">
-                                <h4>A beautifull encounter</h4>
-                                <p>Portrait</p>
-                            </div>
-                        </div>
-          
-                        <div class="col-12 col-sm-6 col-lg-3 single_gallery_item landscapes wow fadeInUpBig" data-wow-delay="700ms">
-                            <a class="gallery-img" href="img/portfolio-img/11.jpg"><img src="img/portfolio-img/11.jpg" alt=""></a>
-                            <!-- Gallery Content -->
-                            <div class="gallery-content">
-                                <h4>Mountains in the mist</h4>
-                                <p>Landscapes</p>
-                            </div>
-                        </div>
-          
-                        <div class="col-12 col-sm-6 col-lg-3 single_gallery_item portraits wow fadeInUpBig" data-wow-delay="900ms">
-                            <a class="gallery-img" href="img/portfolio-img/12.jpg"><img src="img/portfolio-img/12.jpg" alt=""></a>
-                            <!-- Gallery Content -->
-                            <div class="gallery-content">
-                                <h4>A beautifull encounter</h4>
-                                <p>Portrait</p>
+                                <h4>麥軒活力早餐站- 志學店</h4>
+                                <h5>Mài xuān huólì zǎocān zhàn- zhì xué diàn</h5>
                             </div>
                         </div>
 
+                        <div class="col-12 col-sm-6 col-lg-3 single_gallery_item landscapes studio wow fadeInUpBig" data-wow-delay="300ms">
+                          <a href="https://www.laya.com.tw/"><img src="assets/img/ly.jpg" width="224px;" height="252px;"></a>
+                          <div class="gallery-content">
+                              <h4>拉亞漢堡 花蓮東華</h4>
+                              <h5>Lā yà hànbǎo</h5>
+                          </div>
+                        </div>
+        
+                      <div class="col-12 col-sm-6 col-lg-3 single_gallery_item portraits fashion wow fadeInUpBig" data-wow-delay="500ms">
+                          <a href="https://www.facebook.com/kwt5206f/"><img src="assets/img/cmj.jpg" width="224px;" height="252px;"></a>
+                          <div class="gallery-content">
+                              <h4>菜米迦</h4>
+                              <h5>Cài mǐ jiā</h5>
+                          </div>
+                      </div>
+        
+                      <div class="col-12 col-sm-6 col-lg-3 single_gallery_item landscapes studio wow fadeInUpBig" data-wow-delay="700ms">
+                          <a href="https://www.facebook.com/%E5%BC%98%E7%88%BA%E6%BC%A2%E5%A0%A1%E6%9D%B1%E8%8F%AF%E5%BA%97-232753103952201/"><img src="assets/img/hy.jpg" width="224px;" height="252px;"></a>
+                          <div class="gallery-content">
+                              <h4>弘爺漢堡</h4>
+                              <h5>Hóng yé hànbǎo</h5>
+                          </div>
+                      </div>
                     </div>
+                  </div>
                 </div>
-            </section>
+              </section>
+
+              <h2 style="font-weight: 400;letter-spacing: 1px; font-size: 1.5rem;">Suggested restaurants that are popular among NDHU students</h2>
+              <section class="sonar-projects-area" id="projects">
+                <div class="restaurant-content">
+                  <div class="container-fluid">
+                    <div class="row sonar-portfolio">
+                      <div class="col-12 col-sm-6 col-lg-3 single_gallery_item landscapes studio wow fadeInUpBig" data-wow-delay="300ms">
+                        <a href="https://www.facebook.com/Mr.steakNDHU/"><img src="assets/img/npxs.jpg" width="224px;" height="252px;"></a>
+                        <div class="gallery-content">
+                            <h4>牛排先生</h4>
+                            <h5>Niúpái xiānshēng</h5>
+                        </div>
+                      </div>
+      
+                      <div class="col-12 col-sm-6 col-lg-3 single_gallery_item portraits fashion wow fadeInUpBig" data-wow-delay="500ms">
+                          <a href="https://www.facebook.com/%E8%8A%B1%E8%93%AE%E9%A6%99%E6%89%81%E9%A3%9F-%E7%B8%BD%E5%BA%97%E4%B8%AD%E6%AD%A3%E7%9B%B4%E7%87%9F%E5%BA%97-171300319584937"><img src="assets/img/hlx.jpg" width="224px;" height="252px;"></a>
+                          <div class="gallery-content">
+                              <h4>花蓮香</h4>
+                              <h5>Huālián xiāng</h5>
+                          </div>
+                      </div>
+      
+                      <div class="col-12 col-sm-6 col-lg-3 single_gallery_item landscapes studio wow fadeInUpBig" data-wow-delay="700ms">
+                          <a href="https://www.facebook.com/No.49Eatery"><img src="assets/img/no49.jpg" width="224px;" height="252px;"></a>
+                          <div class="gallery-content">
+                              <h4>NO49 EATERY</h4>
+                          </div>
+                      </div>
+      
+                      <div class="col-12 col-sm-6 col-lg-3 single_gallery_item portraits studio wow fadeInUpBig" data-wow-delay="900ms">
+                          <a href="#"><img src="assets/img/xsst.jpg" width="224px;" height="252px;"></a>
+                          <div class="gallery-content">
+                              <h4>學生食堂</h4>
+                              <h5>Xuéshēng shítáng</h5>
+                          </div>
+                      </div>
+
+                      <div class="col-12 col-sm-6 col-lg-3 single_gallery_item landscapes studio wow fadeInUpBig" data-wow-delay="300ms">
+                        <a href="#"><img src="assets/img/sy.jpg" width="224px;" height="252px;"></a>
+                        <div class="gallery-content">
+                            <h4>少爺丼飯</h4>
+                            <h5>Shàoyé jǐng fàn</h5>
+                        </div>
+                      </div>
+
+                    <div class="col-12 col-sm-6 col-lg-3 single_gallery_item portraits fashion wow fadeInUpBig" data-wow-delay="500ms">
+                        <a href="https://www.facebook.com/%E8%B3%80%E7%94%B0%E5%B1%8B-204532622901322/"><img src="assets/img/ht.jpg" width="224px;" height="252px;"></a>
+                        <div class="gallery-content">
+                            <h4>賀田屋蓋飯咖哩</h4>
+                            <h5>Hètián wū gài fàn gālí</h5>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+              </section>
             <!-- ****** Gallery Area End ****** -->
           
           </div>
@@ -263,7 +266,7 @@
     <script src="assets/demo/datatables-demo.js"></script>
 
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-  
+
     <!-- Vendor JS Files -->
     <script src="assets/vendor/aos/aos.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
