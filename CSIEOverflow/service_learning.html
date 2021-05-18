@@ -29,14 +29,13 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
   <link href="assets/css/campuslife.css" rel="stylesheet">
 </head>
 
 <body class="sb-nav-fixed">
-  <header id="header" class="fixed-top d-flex align-items-center header-transparent " >
+  <header id="header" class="fixed-top d-flex align-items-center header-transparent " style="margin-left: -18px;">
     <div class="container d-flex align-items-center justify-content-between">
       <a href="index.html">
         <img src="assets/img/logo.png" href="index.html" style="width: 200pt;">
@@ -56,7 +55,6 @@
 
     </div>
   </header><!-- End Header -->
-
   
     <div id="layoutSidenav">
       <div id="layoutSidenav_nav">
@@ -72,7 +70,7 @@
                         <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                         Restaurants
                       </a>
-                      <a class="nav-link active" href="campus_map.html">
+                      <a class="nav-link" href="campus_map.html">
                         <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                         Campus Map
                       </a>
@@ -106,7 +104,7 @@
                         <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                         Autonomous Hours
                       </a>
-                      <a class="nav-link" href="service_learning.html">
+                      <a class="nav-link active" href="service_learning.html">
                         <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                         Service Learning
                       </a>
@@ -122,79 +120,34 @@
           </nav>
       </div>
 
-      <div id="layoutSidenav_content">
+      <div id="layoutSidenav_content" style="background-color: #2d2d2d;">
         <main>
-          <div class="container-fluid" style="background: #2d2d2d;">
-            <h1 class="mt-4">Campus Map</h1>
-            <h3 style="text-indent: 2rem;">Going around the campus might be difficult for first timers as it is very wide and might be confusing for some people.
-            Here is the <a href="assets/img/map.pdf"><u>Campus Map</u></a> which will help you find your way if you're new here!</h3>
-            <br>
-            <div class="img-magnifier-container">
-              <img id="myimage" src="assets/img/map.png" style="width: 1000px;" alt="NDHU Map">
+          <div class="container-fluid"><br>
+            <h1 >Service Learning</h1>
+            <h3 style="text-indent: 2rem;">
+              Service-learning is an educational approach that combines learning objectives with community service 
+              in order to provide a pragmatic, progressive learning experience while meeting societal needs.
+              Here at National Dong Hwa University each Department has different regulations pertaining to 
+              this course, so it is important that when selecting Service Learning you select the one that is 
+              under your department, for example in CSIE the Service Learning Code is “SL__18740”. The department 
+              of CSIE normally holds meetings every semester to let students know about the course and what 
+              is expected of them to successfully complete the course.
+            </h3>
+            <h3 style="text-indent: 2rem;">
+              Every student has to take 2 Service Learning courses, which two are Service Learning I and Service 
+              Learning II. For 1 SL course you would require 18 service hours to pass, otherwise you would have 
+              to re-take it. Keep in mind that service learning and <a href="autonomous_hours.html">
+              autonomous learning</a> are different.<br>
+            </h3>
+            <div class="sl-img" style="text-align:center;">
+              <img src="assets/img/service_learning.jpg" alt="service learning img" style="width: 550px;">
             </div>
-            
-            <br>
           </div>
     </main>
   </div>
 </div>
   <!-- </div> -->
-  <script>
-    function magnify(imgID, zoom) {
-      var img, glass, w, h, bw;
-      img = document.getElementById(imgID);
-      /*create magnifier glass:*/
-      glass = document.createElement("DIV");
-      glass.setAttribute("class", "img-magnifier-glass");
-      /*insert magnifier glass:*/
-      img.parentElement.insertBefore(glass, img);
-      /*set background properties for the magnifier glass:*/
-      glass.style.backgroundImage = "url('" + img.src + "')";
-      glass.style.backgroundRepeat = "no-repeat";
-      glass.style.backgroundSize = (img.width * zoom) + "px " + (img.height * zoom) + "px";
-      bw = 3;
-      w = glass.offsetWidth / 2;
-      h = glass.offsetHeight / 2;
-      /*execute a function when someone moves the magnifier glass over the image:*/
-      glass.addEventListener("mousemove", moveMagnifier);
-      img.addEventListener("mousemove", moveMagnifier);
-      /*and also for touch screens:*/
-      glass.addEventListener("touchmove", moveMagnifier);
-      img.addEventListener("touchmove", moveMagnifier);
-      function moveMagnifier(e) {
-        var pos, x, y;
-        /*prevent any other actions that may occur when moving over the image*/
-        e.preventDefault();
-        /*get the cursor's x and y positions:*/
-        pos = getCursorPos(e);
-        x = pos.x;
-        y = pos.y;
-        /*prevent the magnifier glass from being positioned outside the image:*/
-        if (x > img.width - (w / zoom)) {x = img.width - (w / zoom);}
-        if (x < w / zoom) {x = w / zoom;}
-        if (y > img.height - (h / zoom)) {y = img.height - (h / zoom);}
-        if (y < h / zoom) {y = h / zoom;}
-        /*set the position of the magnifier glass:*/
-        glass.style.left = (x - w) + "px";
-        glass.style.top = (y - h) + "px";
-        /*display what the magnifier glass "sees":*/
-        glass.style.backgroundPosition = "-" + ((x * zoom) - w + bw) + "px -" + ((y * zoom) - h + bw) + "px";
-      }
-      function getCursorPos(e) {
-        var a, x = 0, y = 0;
-        e = e || window.event;
-        /*get the x and y positions of the image:*/
-        a = img.getBoundingClientRect();
-        /*calculate the cursor's x and y coordinates, relative to the image:*/
-        x = e.pageX - a.left;
-        y = e.pageY - a.top;
-        /*consider any page scrolling:*/
-        x = x - window.pageXOffset;
-        y = y - window.pageYOffset;
-        return {x : x, y : y};
-      }
-    }
-    </script>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
@@ -224,11 +177,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script>
-      /* Initiate Magnify Function
-      with the id of the image, and the strength of the magnifier glass:*/
-      magnify("myimage", 1.5);
-      </script>
+
 </body>
 
 </html>
