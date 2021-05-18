@@ -172,8 +172,8 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 99;
   opacity: 0;
   visibility: hidden;
-  background: #fff;
-  color: #3d3d3d;
+  background: #3d3d3d;
+  color: #fff;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
   border-radius: 15px;
@@ -185,7 +185,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar .dropdown ul a {
   padding: 10px 20px;
-  color: #2a2c39;
+  color: #fff;
   margin: 0 5px;
   font-size: 14px;
 }
@@ -207,7 +207,7 @@ h1, h2, h3, h4, h5, h6 {
 .navbar .dropdown .dropdown ul {
   top: 0;
   left: calc(100% - 30px);
-  visibility: hidden;
+  visibility: visible;
 }
 
 .navbar .dropdown .dropdown:hover > ul {
@@ -254,7 +254,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(20, 21, 28, 0.9);
+  background: #3d3d3d;
   transition: 0.3s;
   z-index: 999;
 }
@@ -274,7 +274,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 15px;
   padding: 10px 0;
   border-radius: 10px;
-  background-color: #fff;
+  background-color: #3d3d3d;
   overflow-y: auto;
   transition: 0.3s;
 }
@@ -283,7 +283,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 10px 20px;
   margin: 5px;
   font-size: 15px;
-  color: #2a2c39;
+  color: #fff;
 }
 
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
@@ -302,7 +302,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 99;
   opacity: 1;
   visibility: visible;
-  background: #fff;
+  background: #3d3d3d;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
 }
 
@@ -325,7 +325,6 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-mobile .dropdown > .dropdown-active {
   display: block;
 }
-
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
