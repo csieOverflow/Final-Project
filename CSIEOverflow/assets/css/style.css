@@ -2,6 +2,9 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Open Sans", sans-serif;
   color: whitesmoke;
@@ -207,7 +210,7 @@ h1, h2, h3, h4, h5, h6 {
 .navbar .dropdown .dropdown ul {
   top: 0;
   left: calc(100% - 30px);
-  visibility: visible;
+  visibility: hidden;
 }
 
 .navbar .dropdown .dropdown:hover > ul {
