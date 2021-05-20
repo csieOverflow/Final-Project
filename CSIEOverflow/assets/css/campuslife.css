@@ -966,4 +966,34 @@ body {
   visibility: visible;
   opacity: 1;
 }
+/*--------------------------------------------------------------
+# Footer Campus Life
+--------------------------------------------------------------*/
+#footer {
+  background: #3d3d3d;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  /* padding: 20px 0px 15px -100px; */
+}
 
+#footer h3 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #f48024;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0 0 10px -220px;
+}
+
+#footer p {
+  font-size: 15;
+  font-style: italic;
+  padding: 0;
+  margin: 0 0 0 -220px;
+}
+
+#footer .copyright {
+  margin: 0 0 5px -220px;
+}
